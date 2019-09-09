@@ -1,0 +1,103 @@
+html {
+  height: 100%;
+  width: 100%;
+  font-style: "Open Sans";
+}
+html body {
+  background-image: url("../images/index-bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+ul {
+  list-style-type: none;
+  margin-right: -20px;
+}
+ul li {
+  display: inline-block;
+  font-size: 1.4em;
+}
+ul li.border-right {
+  border-right: solid 4px #ffffff;
+  padding-right: 5px;
+  padding-left: 5px;
+}
+ul li a {
+  text-decoration: none;
+  color: white;
+  text-shadow: 0px 2px 2px black;
+  padding: 10px 20px;
+  margin: 0 2px;
+}
+ul li a:hover {
+  text-decoration: underline !important;
+  color: white;
+  border-radius: 10px;
+}
+
+#buttons {
+  margin-top: 200px;
+}
+
+button {
+  color: white !important;
+  font-size: 2em !important;
+  border-radius: 10px !important;
+  font-weight: bolder;
+}
+button.btn-download {
+  background-color: #fa834d;
+}
+button.btn-download:hover {
+  background-color: rgba(250, 131, 77, 0.9);
+}
+button.btn-registro {
+  background-color: #FC461F;
+}
+button.btn-registro:hover {
+  background-color: rgba(252, 70, 31, 0.9);
+}
+
+footer {
+  background-image: url("../images/footer.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 65%;
+  height: 300px;
+}
+
+@media (max-width: 400px) {
+  button.navbar-toggler {
+    border: 2px #fa834d solid !important;
+    padding: 4px 8px;
+    color: #fa834d !important;
+  }
+
+  nav ul li {
+    background-color: white;
+    margin-top: -30px !important;
+    margin-bottom: 15px;
+    text-align: left;
+    width: 60%;
+  }
+  nav ul li:hover {
+    background-color: #fa834d;
+  }
+  nav ul li:hover a {
+    color: white !important;
+    text-decoration: none !important;
+  }
+  nav ul li a {
+    color: #fa834d !important;
+    text-shadow: none;
+  }
+
+  footer {
+    width: 100% !important;
+    height: 100px !important;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

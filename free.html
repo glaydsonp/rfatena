@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Atena</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="shortcut icon" href="assets/images/icone.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/themify-icons.css">
+    <link rel="stylesheet" href="assets/css/fonts.css">
+    <!-- <link rel="stylesheet" href="assets/css/jquerymodal.css"> -->
+    <link rel="stylesheet" href="assets/css/doar.css">
+
+
+    <style>
+        .btn-primary {
+            background-color: #CA5740 !important;
+            border-color: #a14533 !important;
+        }
+
+        .btn-primary:hover {
+            background-color: #d47866 !important;
+            border-color: #a14533 !important;
+        }
+
+        body {
+            color: #CA5740 !important;
+        }
+
+        .card-title {
+            font-weight: bold !important;
+            font-size: 1rem !important;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="ti-menu-alt text-white"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="mt-3 navbar-nav m-auto">
+                <li class="p-2 nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="p-2 nav-item"><a class="nav-link" href="infos.html">Infos</a></li>
+                <li class="p-2 nav-item"><a class="nav-link" target="_blank"
+                        href="https://newwoods.gamecp.net/">GameCP</a></li>
+                <li class="p-2 nav-item"><a class="nav-link" href="free.html">Free Player</a></li>
+                <li class="p-2 nav-item"><a class="nav-link" href="premium.html">Premium Player</a></li>
+                <li class="p-2 nav-item"><a class="nav-link" href="doar.html">Store</a></li>
+                <li class="p-2 nav-item"><a class="nav-link" target="_blank"
+                        href="http://suporte.rfnostalgic.com">Support</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container mt-5">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-3">
+                <div class="card">
+                    <div class="card-body" style="box-shadow: 0rem 0.5rem 1rem #cccccc; min-height: 10rem">
+                        <img src="assets/images/fairytales_58.png" alt=""
+                            style="height: 5rem; float:left; margin-top: 1rem">
+                        <span class="text-center">
+                            <h5 class="card-title">DISCLOSURE</h5>
+                            <p class="card-text">
+                                3 groups <br><br>
+                                <button class="btn btn-primary" data-toggle="modal"
+                                    data-target="#exampleModalCenter">START</button>
+                            </p>
+                        </span>
+                    </div>
+                </div>
+                <div class="card mt-5">
+                    <div class="card-body" style="box-shadow: 0rem 0.5rem 1rem #cccccc; min-height: 10rem">
+                        <img src="assets/images/fairytales_59.png" alt=""
+                            style="height: 5rem; float:left; margin-top: 1rem">
+                        <span class="text-center float-right">
+                            <h5 class="card-title">GUILD<br>LEADER</h5>
+                            <p class="card-text">
+                                Exclusive item<br>
+                                <button data-toggle="modal" data-target="#guildLeader" class="btn btn-primary ">I GOT
+                                    IT</button>
+                            </p>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-3">
+                <div class="card">
+                    <div class="card-body text-center" style="box-shadow: 0rem 0.5rem 1rem #cccccc">
+                        <img src="assets/images/fairytales_55.png" alt="" style="width: 70%; margin: auto 15%;">
+                        <h5 class="card-title mt-3">Mage Kit</h5>
+                        <p class="card-text">
+                            Level 55>40 armor +4<br>
+                            Rare D Weapon Lv55 +5<br>
+                            Lv40 Wings +4<br>
+                            <button data-toggle="modal" data-target="#mageKit" class="btn btn-primary  mt-3">GET
+                                IT</button>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-3">
+                <div class="card">
+                    <div class="card-body text-center" style="box-shadow: 0rem 0.5rem 1rem #cccccc">
+                        <img src="assets/images/fairytales_55.png" alt="" style="width: 70%; margin: auto 15%;">
+                        <h5 class="card-title mt-3">Melee Kit</h5>
+                        <p class="card-text">
+                            Level 55>40 armor +4<br>
+                            Rare D Weapon Lv55 +5<br>
+                            Lv40 Wings +4<br>
+                            <button class="btn btn-primary  mt-3" data-toggle="modal" data-target="#meleeKit">GET
+                                IT</button>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-3">
+                <div class="card">
+                    <div class="card-body text-center" style="box-shadow: 0rem 0.5rem 1rem #cccccc">
+                        <img src="assets/images/fairytales_55.png" alt="" style="width: 70%; margin: auto 15%;">
+                        <h5 class="card-title mt-3">Archer Kit</h5>
+                        <p class="card-text">
+                            Level 55>40 armor +4<br>
+                            Rare D Weapon Lv55 +5<br>
+                            Lv40 Wings +4<br>
+                            <button data-toggle="modal" data-target="#archerKit" class="btn btn-primary  mt-3">GET
+                                IT</button>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Spread the server infos on social media</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <button class="btn btn-primary ml-5"
+                        onclick="window.open('https://www.facebook.com/groups/1452027454839167/?ref=group_browse')">Group
+                        1</button>
+                    <button class="btn btn-primary ml-5"
+                        onclick="window.open('https://www.facebook.com/groups/1043882405733584/?ref=group_browse')">Group
+                        2</button>
+                    <button class="btn btn-primary ml-5"
+                        onclick="window.open('https://www.facebook.com/groups/1692514751065355/?ref=group_browse')">Group
+                        3</button>
+                    <p class="mt-3 text-justify mx-4">After you spread the word around social media about the server,
+                        fill the form bellow so we can give you a reward for helping us make the server better everyday.
+                    </p>
+                    <form action="banco/postForm.php" method="post">
+                        <div class="modal-body">
+                            <div class="mb-3">
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text" id="inputGroupPrepend2">Username: </span>
+                                    </div>
+                                    <input type="text" name="user" class="form-control" id="validationDefaultUsername"
+                                        aria-describedby="inputGroupPrepend2" required>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text" id="inputGroupPrepend2">Character name: </span>
+                                    </div>
+                                    <input type="text" name="char" class="form-control" id="validationDefaultUsername"
+                                        aria-describedby="inputGroupPrepend2" required>
+                                </div>
+                            </div>
+                            <input type="hidden" name="type" value="divulgação">
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            <button type="submit" class="btn btn-primary">Send</button>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div> -->
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="guildLeader" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Guild Leader Reward</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <form action="banco/postForm.php" method="post">
+                    <div class="modal-body">
+                        <div class="mb-3">
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="inputGroupPrepend2">Username: </span>
+                                </div>
+                                <input type="text" name="user" class="form-control" id="validationDefaultUsername"
+                                    aria-describedby="inputGroupPrepend2" required>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="inputGroupPrepend2">Character name: </span>
+                                </div>
+                                <input type="text" name="char" class="form-control" id="validationDefaultUsername"
+                                    aria-describedby="inputGroupPrepend2" required>
+                            </div>
+                        </div>
+                        <input type="hidden" name="type" value="guild leader">
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="submit" class="btn btn-primary">Send</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="mageKit" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Mage Kit</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <form action="banco/postForm.php" method="post">
+                    <div class="modal-body">
+                        <div class="mb-3">
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="inputGroupPrepend2">Username: </span>
+                                </div>
+                                <input type="text" name="user" class="form-control" id="validationDefaultUsername"
+                                    aria-describedby="inputGroupPrepend2" required>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="inputGroupPrepend2">Character name: </span>
+                                </div>
+                                <input type="text" name="char" class="form-control" id="validationDefaultUsername"
+                                    aria-describedby="inputGroupPrepend2" required>
+                            </div>
+                        </div>
+                        <input type="hidden" name="type" value="mage kit">
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="submit" class="btn btn-primary">Send</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="meleeKit" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Melee Kit</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <form action="banco/postForm.php" method="post">
+                    <div class="modal-body">
+                        <div class="mb-3">
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="inputGroupPrepend2">Username: </span>
+                                </div>
+                                <input type="text" name="user" class="form-control" id="validationDefaultUsername"
+                                    aria-describedby="inputGroupPrepend2" required>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="inputGroupPrepend2">Character name: </span>
+                                </div>
+                                <input type="text" name="char" class="form-control" id="validationDefaultUsername"
+                                    aria-describedby="inputGroupPrepend2" required>
+                            </div>
+                        </div>
+                        <input type="hidden" name="type" value="melee kit">
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="submit" class="btn btn-primary">Send</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="archerKit" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Archer Kit</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <form action="banco/postForm.php" method="post">
+                    <div class="modal-body">
+                        <div class="mb-3">
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="inputGroupPrepend2">Username: </span>
+                                </div>
+                                <input type="text" name="user" class="form-control" id="validationDefaultUsername"
+                                    aria-describedby="inputGroupPrepend2" required>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="inputGroupPrepend2">Character name: </span>
+                                </div>
+                                <input type="text" name="char" class="form-control" id="validationDefaultUsername"
+                                    aria-describedby="inputGroupPrepend2" required>
+                            </div>
+                        </div>
+                        <input type="hidden" name="type" value="archer kit">
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="submit" class="btn btn-primary">Send</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <footer class="d-flex mt-5 mx-auto"></footer>
+
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/popper.js"></script>
+    <script src="assets/js/bootstrap.js"></script>
+    <!-- <script src="assets/js/jquerymodal.js"></script> -->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,110 @@
+@import variables
+html
+    height: 100%
+    width: 100%
+nav
+    background-color: $third-color
+    box-shadow: 0 5px 15px $third-color
+    ul
+        li
+            a
+                font-size: 1.3em
+                color: white
+                font-weight: 700
+                &:hover
+                    color: white
+                    font-weight: 700
+                    text-shadow: 0 2px 5px black
+main
+    ul
+        list-style-type: none
+        h3
+            color: $secondary-color
+    section
+        &#donate
+            width: 70%
+            float: left
+        h5, h1
+            font-weight: 900
+            color: $third-color
+        p
+            font-weight: bold
+            font-size: 0.8em
+        .promotionalCards
+            width: 100%
+            border-radius: 20px
+            box-shadow: 0px 5px 15px black
+            font-size: 0.85em
+            .img-star
+                width: 75%
+                margin: 0 auto !important
+                height: 30%
+            .btn-donate
+                background-color: $third-color
+                font-weight: bold
+                color: white
+                font-size: 1.3em
+                margin-bottom: -0.5em
+                box-shadow: inset 5px 5px 5px #D98877,inset -5px -5px 5px #6B2E21
+                border: none
+                &:active
+                      transform: translateY(3px)
+#bradesco
+    height: 180px
+    padding: 15px 30px
+    font-size: 1em
+    font-weight: bolder
+aside
+    width: 24%
+    float: right
+    margin-left: 1%
+    font-size: 0.9em
+    h3
+        font-weight: bolder
+        color: $primary-color
+    table
+        width: 100%
+        font-weight: bold
+footer
+    background-image: url($footer-path)
+    background-size: contain
+    background-repeat: no-repeat
+    background-position: center
+    clear: both
+    width: 30%
+    height: 150px
+    margin-top: 1000px !important
+@media (max-width: 400px)
+    main
+        ul
+            width: 80%
+            margin: 20px 10%
+        section
+            h1, h5
+                text-align: center
+            div
+                h1.text-uppercase
+                    margin-top: 50px !important
+                div
+                    img
+                        margin: 10px 25% !important
+                        width: 50% !important
+            &#donate
+                width: 100%
+            .promotionalCards
+                box-shadow: none
+                width: 90%
+                margin: 10px auto 20px !important
+                h3
+                    width: 75px
+                    margin: 0 auto
+                img
+                    width: 185px !important
+                    height: 185px !important
+                div
+                    margin: 20px !important
+    aside
+        width: 80%
+        margin: 0 auto
+    footer
+        width: 100%

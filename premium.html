@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Atena</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="shortcut icon" href="assets/images/icone.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/themify-icons.css">
+    <link rel="stylesheet" href="assets/css/fonts.css">
+    <link rel="stylesheet" href="assets/css/doar.css">
+
+    <style>
+        .btn-primary {
+            background-color: #CA5740 !important;
+            border-color: #a14533 !important;
+        }
+
+        .btn-primary:hover {
+            background-color: #d47866 !important;
+            border-color: #a14533 !important;
+        }
+
+        body {
+            color: #CA5740 !important;
+        }
+
+        .card-title {
+            font-weight: bold !important;
+            font-size: 1rem !important;
+        }
+
+        .secondary-modal-content {
+            display: hidden;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="ti-menu-alt text-white"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="mt-3 navbar-nav m-auto">
+                <li class="p-2 nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="p-2 nav-item"><a class="nav-link" href="infos.html">Info</a></li>
+                <li class="p-2 nav-item"><a class="nav-link" target="_blank"
+                        href="https://newwoods.gamecp.net/">GameCP</a></li>
+                <li class="p-2 nav-item"><a class="nav-link" href="free.html">Free Player</a></li>
+                <li class="p-2 nav-item"><a class="nav-link" href="premium.html">Premium Player</a></li>
+                <li class="p-2 nav-item"><a class="nav-link" href="doar.html">Store</a></li>
+                <li class="p-2 nav-item"><a class="nav-link" target="_blank"
+                        href="http://suporte.rfnostalgic.com">Support</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container mt-5">
+        <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-4">
+                <div class="card" style="width: 80%; margin: auto 0 auto 20%; min-height: 31rem">
+                    <div class="card-body text-center" style="box-shadow: 0 0.5rem 1rem #cccccc">
+                        <img src="assets/images/fairytales_90.png" alt="" style="height: 10rem">
+                        <h5 class="card-title mt-4">KIT 1</h5>
+                        <p class="card-text">
+                            <br>Box Premium(One armor)<br>
+                            100k Cash Points<br>
+                            2 Services<br>
+                            2 EXCLUSIVE POTIONS<br>
+                        </p>
+                        <br><br>
+                        <button class="btn btn-primary btn-block" data-toggle="modal" data-target="#kit1">
+                            BUY NOW
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4">
+                <div class="card" style="width: 80%; margin: auto 10%; min-height: 31rem">
+                    <div class="card-body text-center" style="box-shadow: 0 0.5rem 1rem #cccccc">
+                        <img src="assets/images/fairytales_61.png" alt="" style="height: 10rem">
+                        <h5 class="card-title mt-4">KIT 2</h5>
+                        <p class="card-text">
+                            <br>Box Premium(One armor AND one weapon)<br>
+                            200k Cash Points<br>
+                            3 Services<br>
+                            1 Ancient Elemental<br>
+                            2 EXCLUSIVE POTIONS<br>
+                        </p>
+                        <button class="btn btn-primary btn-block" data-toggle="modal" data-target="#kit2">
+                            BUY NOW
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4">
+                <div class="card" style="width: 80%; margin: auto 20% auto 0; min-height: 31rem">
+                    <div class="card-body text-center" style="box-shadow: 0 0.5rem 1rem #cccccc">
+                        <img src="assets/images/fairytales_68.png" alt="" style="height: 10rem">
+                        <h5 class="card-title mt-4">KIT 3</h5>
+                        <p class="card-text">
+                            <br>Box Premium(One armor, one weapon AND a elemns combo)<br>
+                            400k Cash Points<br>
+                            4 Services<br>
+                            2 Ancient Elemental<br>
+                            5 EXCLUSIVE POTIONS<br>
+                        </p>
+                        <button class="btn btn-primary btn-block" data-toggle="modal" data-target="#kit3">
+                            BUY NOW
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div class="modal fade" id="kit1" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content main-modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Premium Kit 1</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <form action="banco/postForm.php" id="dataForm" method="post">
+                    <div class="modal-body">
+                        <div class="mb-3">
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="inputGroupPrepend2">Username: </span>
+                                </div>
+                                <input type="text" name="user" class="form-control" id="validationDefaultUsername"
+                                    aria-describedby="inputGroupPrepend2" required>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="inputGroupPrepend2">Character name: </span>
+                                </div>
+                                <input type="text" name="char" class="form-control" id="validationDefaultUsername"
+                                    aria-describedby="inputGroupPrepend2" required>
+                            </div>
+                        </div>
+                        <input type="hidden" name="type" value="premium kit 1">
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="submit" class="btn btn-primary">Send</button>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-content d-none secondary-modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Premium Kit 1</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body row">
+                    <form class="col-xs-6 col-sm-6 col-md-6 text-center" target="paypal"
+                        action="https://www.paypal.com/cgi-bin/webscr" method="post">
+                        <h3>USD</h3>
+                        <input type="hidden" name="cmd" value="_s-xclick">
+                        <input type="hidden" name="hosted_button_id" value="RBZMWUYS2EZDQ">
+                        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" border="0"
+                            name="submit" alt="PayPal - The safer, easier way to pay online!">
+                        <img alt="" border="0" src="https://www.paypalobjects.com/pt_BR/i/scr/pixel.gif" width="1"
+                            height="1">
+                    </form>
+                    <form class="col-xs-6 col-sm-6 col-md-6 text-center" target="paypal"
+                        action="https://www.paypal.com/cgi-bin/webscr" method="post">
+                        <h3>BRL</h3>
+                        <input type="hidden" name="cmd" value="_s-xclick">
+                        <input type="hidden" name="hosted_button_id" value="KQKUE3C8EY3XN">
+                        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" border="0"
+                            name="submit" alt="PayPal - The safer, easier way to pay online!">
+                        <img alt="" border="0" src="https://www.paypalobjects.com/pt_BR/i/scr/pixel.gif" width="1"
+                            height="1">
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="kit2" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content main-modal-kit-2">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Premium Kit 2</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <form action="banco/postForm.php" id="dataForm2" method="post">
+                    <div class="modal-body">
+                        <div class="mb-3">
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="inputGroupPrepend2">Username: </span>
+                                </div>
+                                <input type="text" name="user" class="form-control" id="validationDefaultUsername"
+                                    aria-describedby="inputGroupPrepend2" required>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="inputGroupPrepend2">Character name: </span>
+                                </div>
+                                <input type="text" name="char" class="form-control" id="validationDefaultUsername"
+                                    aria-describedby="inputGroupPrepend2" required>
+                            </div>
+                        </div>
+                        <input type="hidden" name="type" value="premium kit 2">
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="submit" class="btn btn-primary">Send</button>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-content d-none secondary-modal-2">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Premium Kit 2</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body row">
+                    <form class="col-xs-6 col-sm-6 col-md-6 text-center" target="paypal"
+                        action="https://www.paypal.com/cgi-bin/webscr" method="post">
+                        <h3>USD</h3>
+                        <input type="hidden" name="cmd" value="_s-xclick">
+                        <input type="hidden" name="hosted_button_id" value="W87HQRJE27MLJ">
+                        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" border="0"
+                            name="submit" alt="PayPal - The safer, easier way to pay online!">
+                        <img alt="" border="0" src="https://www.paypalobjects.com/pt_BR/i/scr/pixel.gif" width="1"
+                            height="1">
+                    </form>
+                    <form class="col-xs-6 col-sm-6 col-md-6 text-center" target="paypal"
+                        action="https://www.paypal.com/cgi-bin/webscr" method="post">
+                        <h3>BRL</h3>
+                        <input type="hidden" name="cmd" value="_s-xclick">
+                        <input type="hidden" name="hosted_button_id" value="FJ4HVL9LH9L5A">
+                        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" border="0"
+                            name="submit" alt="PayPal - The safer, easier way to pay online!">
+                        <img alt="" border="0" src="https://www.paypalobjects.com/pt_BR/i/scr/pixel.gif" width="1"
+                            height="1">
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="kit3" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content main-modal-kit-3">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Premium Kit 3</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <form action="banco/postForm.php" id="dataForm3" method="post">
+                    <div class="modal-body">
+                        <div class="mb-3">
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="inputGroupPrepend2">Username: </span>
+                                </div>
+                                <input type="text" name="user" class="form-control" id="validationDefaultUsername"
+                                    aria-describedby="inputGroupPrepend2" required>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="inputGroupPrepend2">Character name: </span>
+                                </div>
+                                <input type="text" name="char" class="form-control" id="validationDefaultUsername"
+                                    aria-describedby="inputGroupPrepend2" required>
+                            </div>
+                        </div>
+                        <input type="hidden" name="type" value="premium kit 3">
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="submit" class="btn btn-primary">Send</button>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-content d-none secondary-modal-3">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Premium Kit 3</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body row">
+                    <form class="col-xs-6 col-sm-6 col-md-6 text-center" target="paypal"
+                        action="https://www.paypal.com/cgi-bin/webscr" method="post">
+                        <h3>USD</h3>
+                        <input type="hidden" name="cmd" value="_s-xclick">
+                        <input type="hidden" name="hosted_button_id" value="3CERYE9NGRH6U">
+                        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" border="0"
+                            name="submit" alt="PayPal - The safer, easier way to pay online!">
+                        <img alt="" border="0" src="https://www.paypalobjects.com/pt_BR/i/scr/pixel.gif" width="1"
+                            height="1">
+                    </form>
+                    <form class="col-xs-6 col-sm-6 col-md-6 text-center" target="paypal"
+                        action="https://www.paypal.com/cgi-bin/webscr" method="post">
+                        <h3>BRL</h3>
+                        <input type="hidden" name="cmd" value="_s-xclick">
+                        <input type="hidden" name="hosted_button_id" value="5Z3B7KXN2WBNS">
+                        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" border="0"
+                            name="submit" alt="PayPal - The safer, easier way to pay online!">
+                        <img alt="" border="0" src="https://www.paypalobjects.com/pt_BR/i/scr/pixel.gif" width="1"
+                            height="1">
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="d-flex mt-5 mx-auto"></footer>
+
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/popper.js"></script>
+    <script src="assets/js/bootstrap.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

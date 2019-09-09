@@ -1,0 +1,141 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+nav {
+  background-color: #CA5740;
+  box-shadow: 0 5px 15px #CA5740;
+}
+nav ul li a {
+  font-size: 1.3em;
+  color: white;
+  font-weight: 700;
+}
+nav ul li a:hover {
+  color: white;
+  font-weight: 700;
+  text-shadow: 0 2px 5px black;
+}
+
+main ul {
+  list-style-type: none;
+}
+main ul h3 {
+  color: #FC461F;
+}
+main section#donate {
+  width: 70%;
+  float: left;
+}
+main section h5, main section h1 {
+  font-weight: 900;
+  color: #CA5740;
+}
+main section p {
+  font-weight: bold;
+  font-size: 0.8em;
+}
+main section .promotionalCards {
+  width: 100%;
+  border-radius: 20px;
+  box-shadow: 0px 5px 15px black;
+  font-size: 0.85em;
+}
+main section .promotionalCards .img-star {
+  width: 75%;
+  margin: 0 auto !important;
+  height: 30%;
+}
+main section .promotionalCards .btn-donate {
+  background-color: #CA5740;
+  font-weight: bold;
+  color: white;
+  font-size: 1.3em;
+  margin-bottom: -0.5em;
+  box-shadow: inset 5px 5px 5px #D98877, inset -5px -5px 5px #6B2E21;
+  border: none;
+}
+main section .promotionalCards .btn-donate:active {
+  transform: translateY(3px);
+}
+
+#bradesco {
+  height: 180px;
+  padding: 15px 30px;
+  font-size: 1em;
+  font-weight: bolder;
+}
+
+aside {
+  width: 24%;
+  float: right;
+  margin-left: 1%;
+  font-size: 0.9em;
+}
+aside h3 {
+  font-weight: bolder;
+  color: #fa834d;
+}
+aside table {
+  width: 100%;
+  font-weight: bold;
+}
+
+footer {
+  background-image: url("../images/footer.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  clear: both;
+  width: 30%;
+  height: 150px;
+  margin-top: 1000px !important;
+}
+
+@media (max-width: 400px) {
+  main ul {
+    width: 80%;
+    margin: 20px 10%;
+  }
+  main section h1, main section h5 {
+    text-align: center;
+  }
+  main section div h1.text-uppercase {
+    margin-top: 50px !important;
+  }
+  main section div div img {
+    margin: 10px 25% !important;
+    width: 50% !important;
+  }
+  main section#donate {
+    width: 100%;
+  }
+  main section .promotionalCards {
+    box-shadow: none;
+    width: 90%;
+    margin: 10px auto 20px !important;
+  }
+  main section .promotionalCards h3 {
+    width: 75px;
+    margin: 0 auto;
+  }
+  main section .promotionalCards img {
+    width: 185px !important;
+    height: 185px !important;
+  }
+  main section .promotionalCards div {
+    margin: 20px !important;
+  }
+
+  aside {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  footer {
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=doar.css.map */
