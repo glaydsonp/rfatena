@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Atena</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="shortcut icon" href="assets/images/icone.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/themify-icons.css">
+    <link rel="stylesheet" href="assets/css/fonts.css">
+    <link rel="stylesheet" href="assets/css/jquerymodal.css">
+    <link rel="stylesheet" href="assets/css/doar.css">
+
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="ti-menu-alt text-white"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="mt-3 navbar-nav m-auto">
+                <li class="p-2 nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="p-2 nav-item"><a class="nav-link" href="infos.html">Infos</a></li>
+                <li class="p-2 nav-item"><a class="nav-link" target="_blank"
+                        href="https://newwoods.gamecp.net/">GameCP</a></li>
+                <li class="p-2 nav-item"><a class="nav-link" href="free.html">Free Player</a></li>
+                <li class="p-2 nav-item"><a class="nav-link" href="premium.html">Premium Player</a></li>
+                <li class="p-2 nav-item"><a class="nav-link" href="doar.html">Store</a></li>
+                <li class="p-2 nav-item"><a class="nav-link" target="_blank"
+                        href="http://suporte.rfnostalgic.com">Support</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container mt-5">
+        <section class="payment float-left" id="donate">
+
+            <h5 class="h5 text-uppercase">Formas de pagamento</h5>
+            <div class="row">
+                <div class="col-md-3"><img src="assets/images/mp-logo.png" style="width: 100%;" alt="Logo Mercado Pago">
+                </div>
+                <div class="col-md-3"><img src="assets/images/ps-logo.png" style="width: 100%;" alt="Logo PagSeguro">
+                </div>
+                <div class="col-md-3"><img src="assets/images/pp-logo.png" style="width: 100%;" alt="Logo PayPal">
+                </div>
+                <div class="col-md-3"><a href="#bradesco" rel="modal:open"><img src="assets/images/bradesco-logo.png"
+                            style="width: 100%;" alt="Logo Bradesco">
+                    </a></div>
+            </div>
+
+            <div class="row mt-3">
+                <h1 class="h1 text-uppercase col-md-3 col-sm-12 m-auto">Pacotes</h1>
+                <div class="float-right pl-5 col-md-9 col-sm-12 m-auto">
+                    <p class="text-aux">Os pacotes a seguir são oferecidos em caráter promocional. Entretanto é possível
+                        adquirir os
+                        itens separadamente.<br>
+                        <small>Exceções: Combo BBL e processing points.</small></p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="row promotionalCards col-md-3 col-sm-12 mt-3 mr-1">
+                    <h3 class="h6 text-uppercase mb-3 mt-3 mx-auto">Opção 1</h3>
+                    <img class="img-star" src="assets/images/estrela1.png" alt="Pacote Iniciante">
+                    <div class="container text-center mt-3 mb-2">
+                        <p>Kit Elemental HDH<br>
+                            R$100,00 <b>À ESCOLHA</b><br>
+                            JetPack +5 level 50 Chaos<br>
+                            R$40,00<br>
+                            PREMIUM SERVICE<br>
+                            30 dias R$30,00<br>
+                            Arma Leon level 40<br>
+                            R$30,00 <b>À ESCOLHA</b></p>
+                    </div>
+                    <button id="pacoteUm" class="btn btn-donate mx-auto py-2 px-4">R$175</button>
+                </div>
+                <div class="row promotionalCards col-md-3 col-sm-12 mt-3 mx-1">
+                    <h3 class="h6 text-uppercase mb-3 mt-3 mx-auto">Opção 2</h3>
+                    <img class="img-star" src="assets/images/estrela2.png" alt="Pacote Iniciante">
+                    <div class="container text-center mt-3 mb-5">
+                        <p><b>Todos os itens anteriores mais: </b>
+                            <br>150.000 Cash Points<br>
+                            R$100,00<br>
+                            40.000 Gold Points<br>
+                            R$20,00
+                        </p>
+                    </div>
+                    <button id="pacoteDois" class="btn btn-donate mx-auto py-2 px-4">R$250</button>
+                </div>
+                <div class="row promotionalCards col-md-3 col-sm-12 mt-3 mx-1">
+                    <h3 class="h6 text-uppercase mb-3 mt-3 mx-auto">Opção 3</h3>
+                    <img class="img-star" src="assets/images/estrela3.png" alt="Pacote Iniciante">
+                    <div class="container text-center mt-3 mb-2">
+                        <p><b>Todos os itens anteriores mais: </b><br>
+                            Uma armadura completa do 55 rebaixada para o 40 +4 <b>À ESCOLHA</b><br>
+                            R$60,00<br>
+                            200 Processing Points<br>
+                            R$20,00
+                        </p>
+                    </div>
+                    <button id="pacoteTres" class="btn btn-donate mx-auto py-2 px-4">R$350</button>
+                </div>
+                <div class="row promotionalCards col-md-3 col-sm-12 mt-3 ml-1">
+                    <h3 class="h6 text-uppercase mb-3 mt-3 mx-auto">Opção 4</h3>
+                    <img class="img-star" src="assets/images/estrela4.png" alt="Pacote Iniciante">
+                    <div class="container text-center mt-3 mb-2">
+                        <p><b>Todos os itens anteriores mais: </b><br>
+                            Um <b>COMBO BBL</b> (vendido exclusivamente neste pacote)<br>
+                            R$120,00<br>
+                            200.000 Cash Points<br>
+                            R$120,00
+                        </p>
+                    </div>
+                    <button id="pacoteQuatro" class="btn btn-donate mx-auto py-2 px-4">R$500</button>
+                </div>
+            </div>
+        </section>
+
+        <aside class="">
+            <div class="cashpoints">
+                <h3 class="text-uppercase">Cash points</h3>
+                <table class="">
+                    <tr>
+                        <td>10.000</td>
+                        <td>R$10,00</td>
+                    </tr>
+                    <tr>
+                        <td>30.000</td>
+                        <td>R$25,00</td>
+                    </tr>
+                    <tr>
+                        <td>60.000</td>
+                        <td>R$40,00</td>
+                    </tr>
+                    <tr>
+                        <td>100.000</td>
+                        <td>R$65,00</td>
+                    </tr>
+                    <tr>
+                        <td>200.000</td>
+                        <td>R$120,00</td>
+                    </tr>
+                    <tr>
+                        <td>400.000</td>
+                        <td>R$200,00</td>
+                    </tr>
+                    <tr>
+                        <td>1.000.000</td>
+                        <td>R$380,00</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="goldpoints mt-1">
+                <h3 class="text-uppercase">Gold points</h3>
+                <table>
+                    <tr>
+                        <td>15.000</td>
+                        <td>R$10,00</td>
+                    </tr>
+                    <tr>
+                        <td>40.000</td>
+                        <td>R$20,00</td>
+                    </tr>
+                    <tr>
+                        <td>110.000</td>
+                        <td>R$45,00</td>
+                    </tr>
+                    <tr>
+                        <td>300.000</td>
+                        <td>R$100,00</td>
+                    </tr>
+                    <tr>
+                        <td>600.000</td>
+                        <td>R$180,00</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="trocas mt-1">
+                <h3 class="text-uppercase">Trocas</h3>
+                <p><b>Classe Inicial:</b> R$40,00<br>
+                    <b>Classe Inicial + Itens:</b> R$60,00<br>
+                    <b>De Raça:</b> R$100,00<br>
+                    <b>De Item:</b> R$20,00</p>
+            </div>
+            <div class="trocas mt-1">
+                <h3 class="text-uppercase">Itens novos</h3>
+                <p><b>Set Dragon +0:</b> R$100,00<br>
+                    <b>Set Dragon +3:</b> R$130,00<br>
+                    <b>Token Final (set):</b> R$70,00<br>
+                    <b>Kit Elemental Ancient:</b> R$100,00<br>
+                    <b>Token Ancient (elemental):</b> R$20,00(unidade)<br>
+                    <b>Token Ancient (elemental):</b> R$70,00(4)<br>
+                    <b>MAU Donner (melee e ranger):</b> R$140,00<br>
+                </p>
+            </div>
+        </aside>
+    </main>
+
+    <footer class="d-flex mt-5 mx-auto"></footer>
+
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/popper.js"></script>
+    <script src="assets/js/bootstrap.js"></script>
+    <script src="assets/js/jquerymodal.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

@@ -17,6 +17,11 @@
     <link rel="stylesheet" href="assets/css/jquerymodal.css">
     <link rel="stylesheet" href="assets/css/doar.css">
 
+    <style>
+        h3{
+            color: #E7563C;
+        }
+    </style>
 
 </head>
 
@@ -43,167 +48,95 @@
     </nav>
 
     <main class="container mt-5">
-        <section class="payment float-left" id="donate">
-
-            <h5 class="h5 text-uppercase">Formas de pagamento</h5>
-            <div class="row">
-                <div class="col-md-3"><img src="assets/images/mp-logo.png" style="width: 100%;" alt="Logo Mercado Pago">
-                </div>
-                <div class="col-md-3"><img src="assets/images/ps-logo.png" style="width: 100%;" alt="Logo PagSeguro">
-                </div>
-                <div class="col-md-3"><img src="assets/images/pp-logo.png" style="width: 100%;" alt="Logo PayPal">
-                </div>
-                <div class="col-md-3"><a href="#bradesco" rel="modal:open"><img src="assets/images/bradesco-logo.png"
-                            style="width: 100%;" alt="Logo Bradesco">
-                    </a></div>
-            </div>
-
-            <div class="row mt-3">
-                <h1 class="h1 text-uppercase col-md-3 col-sm-12 m-auto">Pacotes</h1>
-                <div class="float-right pl-5 col-md-9 col-sm-12 m-auto">
-                    <p class="text-aux">Os pacotes a seguir são oferecidos em caráter promocional. Entretanto é possível
-                        adquirir os
-                        itens separadamente.<br>
-                        <small>Exceções: Combo BBL e processing points.</small></p>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="row promotionalCards col-md-3 col-sm-12 mt-3 mr-1">
-                    <h3 class="h6 text-uppercase mb-3 mt-3 mx-auto">Opção 1</h3>
-                    <img class="img-star" src="assets/images/estrela1.png" alt="Pacote Iniciante">
-                    <div class="container text-center mt-3 mb-2">
-                        <p>Kit Elemental HDH<br>
-                            R$100,00 <b>À ESCOLHA</b><br>
-                            JetPack +5 level 50 Chaos<br>
-                            R$40,00<br>
-                            PREMIUM SERVICE<br>
-                            30 dias R$30,00<br>
-                            Arma Leon level 40<br>
-                            R$30,00 <b>À ESCOLHA</b></p>
+        <div class="row">
+            <div class="col-xs-12 col-sm-6 row">
+                <h3 class="text-center h3 col-sm-12 col-xs-12">CASHPOINTS</h3>
+                <div class="col-xs-12 col-sm-4">
+                    <div class="card sombra-card">
+                        <div class="card-body">
+                            <img src="assets/images/cash1.png" alt="" style="width: 90%; margin: 0 5%;">
+                            <h3 class="h3 text-center" style="margin-top: 0.5rem">
+                                10.000
+                            </h3>
+                        </div>
                     </div>
-                    <button id="pacoteUm" class="btn btn-donate mx-auto py-2 px-4">R$175</button>
                 </div>
-                <div class="row promotionalCards col-md-3 col-sm-12 mt-3 mx-1">
-                    <h3 class="h6 text-uppercase mb-3 mt-3 mx-auto">Opção 2</h3>
-                    <img class="img-star" src="assets/images/estrela2.png" alt="Pacote Iniciante">
-                    <div class="container text-center mt-3 mb-5">
-                        <p><b>Todos os itens anteriores mais: </b>
-                            <br>150.000 Cash Points<br>
-                            R$100,00<br>
-                            40.000 Gold Points<br>
-                            R$20,00
-                        </p>
+                <div class="col-xs-12 col-sm-4">
+                    <div class="card sombra-card">
+                        <div class="card-body">
+                            <img src="assets/images/cash2.png" alt="" style="width: 90%; margin: 1.5rem 5%;">
+                            <h3 class="h3 text-center" style="margin-top: 0.5rem">
+                                30.000
+                            </h3>
+                        </div>
                     </div>
-                    <button id="pacoteDois" class="btn btn-donate mx-auto py-2 px-4">R$250</button>
                 </div>
-                <div class="row promotionalCards col-md-3 col-sm-12 mt-3 mx-1">
-                    <h3 class="h6 text-uppercase mb-3 mt-3 mx-auto">Opção 3</h3>
-                    <img class="img-star" src="assets/images/estrela3.png" alt="Pacote Iniciante">
-                    <div class="container text-center mt-3 mb-2">
-                        <p><b>Todos os itens anteriores mais: </b><br>
-                            Uma armadura completa do 55 rebaixada para o 40 +4 <b>À ESCOLHA</b><br>
-                            R$60,00<br>
-                            200 Processing Points<br>
-                            R$20,00
-                        </p>
+                <div class="col-xs-12 col-sm-4">
+                    <div class="card sombra-card">
+                        <div class="card-body">
+                            <img src="assets/images/cash3.png" alt="" style="width: 90%; margin: 0 5%; height: 6rem;">
+                            <h3 class="h3 text-center" style="margin-top: 0.5rem">
+                                100.000
+                            </h3>
+                        </div>
                     </div>
-                    <button id="pacoteTres" class="btn btn-donate mx-auto py-2 px-4">R$350</button>
                 </div>
-                <div class="row promotionalCards col-md-3 col-sm-12 mt-3 ml-1">
-                    <h3 class="h6 text-uppercase mb-3 mt-3 mx-auto">Opção 4</h3>
-                    <img class="img-star" src="assets/images/estrela4.png" alt="Pacote Iniciante">
-                    <div class="container text-center mt-3 mb-2">
-                        <p><b>Todos os itens anteriores mais: </b><br>
-                            Um <b>COMBO BBL</b> (vendido exclusivamente neste pacote)<br>
-                            R$120,00<br>
-                            200.000 Cash Points<br>
-                            R$120,00
-                        </p>
+            </div>
+            <div class="col-xs-12 col-sm-6">
+                <h3 class="text-center h3 col-sm-12 col-xs-12">GOLDPOINTS</h3>
+                <ul class="links-lista-store">
+                    <a href="#" class="store-button"><li>40.000 20,00</li></a>
+                    <a href="#" class="store-button"><li>110.000 45,00</li></a>
+                    <a href="#" class="store-button"><li>300.000 100,00</li></a>
+                    <a href="#" class="store-button"><li>600.000 180,00</li></a>
+                </ul>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+        <div class="row mt-2">
+            <div class="col-xs-12 col-sm-6 row order-sm-2">
+                <h3 class="text-center h3 col-sm-12 col-xs-12">ITENS</h3>
+                <div class="col-xs-12 col-sm-4">
+                    <div class="card sombra-card">
+                        <div class="card-body">
+                            <img src="assets/images/fairytales_63.png" alt="" style="width: 90%; margin: 0 5%;">
+                            <h6 class="h6 text-center mt-4" style="color: #E7563C">
+                                Kit Elemental HDH
+                            </h6>
+                        </div>
                     </div>
-                    <button id="pacoteQuatro" class="btn btn-donate mx-auto py-2 px-4">R$500</button>
+                </div>
+                <div class="col-xs-12 col-sm-4">
+                    <div class="card sombra-card">
+                        <div class="card-body">
+                            <img src="assets/images/fairytales_21.png" alt="" style="width: 90%; margin: 0 5%;">
+                            <h6 class="h6 text-center mt-4" style="color: #E7563C">
+                                Dragon Armors +3
+                            </h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-4">
+                    <div class="card sombra-card">
+                        <div class="card-body">
+                            <img src="assets/images/fairytales_14.png" alt="" style="width: 90%; margin: 0 5%;">
+                            <h6 class="h6 text-center mt-4" style="color: #E7563C">
+                                Level 60 Armors +3
+                            </h6>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </section>
-
-        <aside class="">
-            <div class="cashpoints">
-                <h3 class="text-uppercase">Cash points</h3>
-                <table class="">
-                    <tr>
-                        <td>10.000</td>
-                        <td>R$10,00</td>
-                    </tr>
-                    <tr>
-                        <td>30.000</td>
-                        <td>R$25,00</td>
-                    </tr>
-                    <tr>
-                        <td>60.000</td>
-                        <td>R$40,00</td>
-                    </tr>
-                    <tr>
-                        <td>100.000</td>
-                        <td>R$65,00</td>
-                    </tr>
-                    <tr>
-                        <td>200.000</td>
-                        <td>R$120,00</td>
-                    </tr>
-                    <tr>
-                        <td>400.000</td>
-                        <td>R$200,00</td>
-                    </tr>
-                    <tr>
-                        <td>1.000.000</td>
-                        <td>R$380,00</td>
-                    </tr>
-                </table>
+            <div class="col-xs-12 col-sm-6 order-sm-1">
+                <h3 class="text-center h3 col-sm-12 col-xs-12">SERVICES</h3>
+                <ul class="links-lista-store">
+                    <a href="#" class="store-button"><li>Initial Class 40,00</li></a>
+                    <a href="#" class="store-button"><li>Initial Class + Items 60,00</li></a>
+                    <a href="#" class="store-button"><li>Change Races 100,00</li></a>
+                    <a href="#" class="store-button"><li>Item Change 20,00</li></a>
+                </ul>
             </div>
-            <div class="goldpoints mt-1">
-                <h3 class="text-uppercase">Gold points</h3>
-                <table>
-                    <tr>
-                        <td>15.000</td>
-                        <td>R$10,00</td>
-                    </tr>
-                    <tr>
-                        <td>40.000</td>
-                        <td>R$20,00</td>
-                    </tr>
-                    <tr>
-                        <td>110.000</td>
-                        <td>R$45,00</td>
-                    </tr>
-                    <tr>
-                        <td>300.000</td>
-                        <td>R$100,00</td>
-                    </tr>
-                    <tr>
-                        <td>600.000</td>
-                        <td>R$180,00</td>
-                    </tr>
-                </table>
-            </div>
-            <div class="trocas mt-1">
-                <h3 class="text-uppercase">Trocas</h3>
-                <p><b>Classe Inicial:</b> R$40,00<br>
-                    <b>Classe Inicial + Itens:</b> R$60,00<br>
-                    <b>De Raça:</b> R$100,00<br>
-                    <b>De Item:</b> R$20,00</p>
-            </div>
-            <div class="trocas mt-1">
-                <h3 class="text-uppercase">Itens novos</h3>
-                <p><b>Set Dragon +0:</b> R$100,00<br>
-                    <b>Set Dragon +3:</b> R$130,00<br>
-                    <b>Token Final (set):</b> R$70,00<br>
-                    <b>Kit Elemental Ancient:</b> R$100,00<br>
-                    <b>Token Ancient (elemental):</b> R$20,00(unidade)<br>
-                    <b>Token Ancient (elemental):</b> R$70,00(4)<br>
-                    <b>MAU Donner (melee e ranger):</b> R$140,00<br>
-                </p>
-            </div>
-        </aside>
+        </div>
     </main>
 
     <footer class="d-flex mt-5 mx-auto"></footer>
